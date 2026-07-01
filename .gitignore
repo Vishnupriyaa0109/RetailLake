@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Spark
+spark-warehouse/
+metastore_db/
+
+# Hadoop Logs
+logs/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data Files
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.zip
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Processed Data
+data/processed/
