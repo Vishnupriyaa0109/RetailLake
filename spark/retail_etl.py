@@ -1,5 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, year, month, dayofmonth, hour
+from pyspark.sql.functions import sum
 # Create Spark Session
 spark = SparkSession.builder \
     .appName("RetailLake ETL") \
@@ -68,3 +69,15 @@ df.write.mode("overwrite").parquet(
 )
 
 print("\nSilver Layer Saved Successfully!")
+# Gold Layer - Country Wise Revenue
+gold_df = df.groupBy("Country").agg(sum("Revenue").alias("TotalRevenue"))
+
+print("\nTop 10 Countries by Revenue:")
+gold_df.orderBy(col("TotalRevenue").desc()).show(10)
+
+# Save Gold Layer
+gold_df.write.mode("overwrite").parquet(
+    "file:///home/vishnupriya_reddy2-9/RetailLake/data/processed/retail_gold"
+)
+
+print("Gold Layer Saved Successfully!")
