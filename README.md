@@ -58,6 +58,8 @@ RetailLake/
 - Duplicate Removal
 - Date Feature Engineering
 - Silver Layer (Parquet)
+- Gold Layer
+- Revenue Aggregation by Country
 - Git Version Control
 - GitHub Repository
 
@@ -67,7 +69,6 @@ RetailLake/
 
 - Hadoop HDFS
 - Hive
-- Gold Layer
 - Apache Airflow
 - Power BI Dashboard
 - Docker Deployment
