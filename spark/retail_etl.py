@@ -81,3 +81,5 @@ gold_df.write.mode("overwrite").parquet(
 )
 
 print("Gold Layer Saved Successfully!")
+# Save Gold Layer to HDFS (Preparation)
+print("\nHDFS Integration will be implemented in the next phase.")
