@@ -1,60 +1,89 @@
-# RetailLake - End-to-End Data Engineering Project
+# 🚀 RetailLake – End-to-End Data Engineering Pipeline
 
-## Overview
+## 📌 Overview
 
-RetailLake is an end-to-end Data Engineering project built using Apache Spark, Hadoop, Hive, Airflow, and Power BI.
+RetailLake is an end-to-end Data Engineering project that demonstrates how retail transaction data is ingested, transformed, stored, queried, and visualized using modern data engineering tools.
 
-The project follows the Medallion Architecture:
+The project follows the **Medallion Architecture**:
 
-- Bronze Layer - Raw Data
-- Silver Layer - Cleaned & Transformed Data
-- Gold Layer - Business Analytics
+- 🥉 Bronze Layer – Raw Data
+- 🥈 Silver Layer – Cleaned & Enriched Data
+- 🥇 Gold Layer – Business Analytics
 
 ---
 
-## Tech Stack
+# 🛠 Tech Stack
 
 - Apache Spark
 - Hadoop HDFS
-- Hive
-- Airflow
+- Apache Hive
+- Apache Airflow
 - Power BI
 - Python
 - Git & GitHub
 
 ---
 
-## Dataset
-
-Online Retail II Dataset (UCI Machine Learning Repository)
-
----
-
-## Current Progress
-
-- [x] Spark Environment Setup
-- [x] Bronze Layer
-- [x] Revenue Calculation
-- [x] Missing Value Analysis
-- [x] Duplicate Detection
-- [x] Duplicate Removal
-- [x] Feature Engineering
-- [x] Silver Layer (Parquet)
-
----
-
-## Project Structure
+# 📂 Project Structure
 
 ```
 RetailLake/
 │
-├── data/
-├── spark/
-├── hive/
 ├── airflow/
-├── dashboards/
 ├── architecture/
+├── dashboards/
+├── data/
+│   ├── raw/
+│   └── processed/
 ├── docs/
+├── hive/
+├── logs/
+├── notebooks/
+├── reports/
 ├── screenshots/
+├── spark/
+├── requirements.txt
 └── README.md
 ```
+
+---
+
+# ✅ Completed
+
+- Spark Environment Setup
+- Bronze Layer
+- Revenue Calculation
+- Missing Value Analysis
+- Duplicate Detection
+- Duplicate Removal
+- Date Feature Engineering
+- Silver Layer (Parquet)
+- Git Version Control
+- GitHub Repository
+
+---
+
+# 🚧 Upcoming
+
+- Hadoop HDFS
+- Hive
+- Gold Layer
+- Apache Airflow
+- Power BI Dashboard
+- Docker Deployment
+
+---
+
+# 📊 Dataset
+
+Online Retail II Dataset (UCI Machine Learning Repository)
+
+Records Processed:
+
+**1,067,371**
+
+---
+
+# 👩‍💻 Author
+
+**Vishnu Priya Yannam**

@@ -1,0 +1,8 @@
+pyspark==4.0.0
+pandas
+numpy
+matplotlib
+jupyter
+openpyxl
+pyarrow
+findspark
