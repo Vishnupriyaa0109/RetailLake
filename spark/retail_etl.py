@@ -65,7 +65,7 @@ df.select(
 ).show(5)
 # Save Silver Layer as Parquet
 df.write.mode("overwrite").parquet(
-    "file:///home/vishnupriya_reddy2-9/RetailLake/data/processed/retail_silver"
+    "hdfs://localhost:9000/RetailLake/silver"
 )
 
 print("\nSilver Layer Saved Successfully!")
@@ -77,7 +77,7 @@ gold_df.orderBy(col("TotalRevenue").desc()).show(10)
 
 # Save Gold Layer
 gold_df.write.mode("overwrite").parquet(
-    "file:///home/vishnupriya_reddy2-9/RetailLake/data/processed/retail_gold"
+    "hdfs://localhost:9000/RetailLake/gold"
 )
 
 print("Gold Layer Saved Successfully!")
