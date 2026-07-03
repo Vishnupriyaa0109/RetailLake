@@ -62,14 +62,12 @@ RetailLake/
 - Revenue Aggregation by Country
 - Git Version Control
 - GitHub Repository
-
----
-
-# 🚧 Upcoming
-
 - Hadoop HDFS
 - Hive
 - Apache Airflow
+---
+
+# 🚧 Upcoming
 - Power BI Dashboard
 - Docker Deployment
 
