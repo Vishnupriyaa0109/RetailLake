@@ -52,16 +52,26 @@ RetailLake/
 
 - Spark Environment Setup
 - Bronze Layer
+- Silver Layer (Parquet)
+- Gold Layer (Parquet)
 - Revenue Calculation
 - Missing Value Analysis
 - Duplicate Detection
 - Duplicate Removal
 - Date Feature Engineering
-- Silver Layer (Parquet)
-- Gold Layer
-- Revenue Aggregation by Country
+- Country-wise Revenue Aggregation
+- Apache Hive Integration
+- Hive Database Creation
+- Hive External Tables (silver_sales & gold_sales)
+- Hive Query Execution
+- Hadoop HDFS Setup
+- Apache Airflow DAG Orchestration
+- Multi-Task Airflow Pipeline (Bronze → Silver → Gold)
+- ETL Pipeline Automation
+- Docker-based Airflow Deployment
 - Git Version Control
 - GitHub Repository
+<<<<<<< HEAD
 - Hadoop HDFS
 - Hive
 - Apache Airflow
@@ -70,6 +80,20 @@ RetailLake/
 # 🚧 Upcoming
 - Power BI Dashboard
 - Docker Deployment
+=======
+---
+
+# 🚧 Future Enhancements
+
+- Interactive Power BI Dashboard
+- Dockerized End-to-End Deployment
+- Machine Learning-Based Predictive Analytics
+- Customer Segmentation
+- Sales Forecasting
+- Incremental Data Loading
+- Spark Standalone Cluster
+- Apache Kafka Integration
+>>>>>>> a71a541 (Update README and finalize RetailLake ETL pipeline)
 
 ---
 

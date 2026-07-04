@@ -4,13 +4,16 @@ from pyspark.sql.functions import sum
 # Create Spark Session
 spark = SparkSession.builder \
     .appName("RetailLake ETL") \
+     .config("spark.hadoop.fs.defaultFS", "hdfs://host.docker.internal:9000") \
+     .config("spark.hadoop.dfs.client.use.datanode.hostname", "true") \
+     .config("spark.hadoop.fs.file.impl", "org.apache.hadoop.fs.LocalFileSystem") \
     .getOrCreate()
 spark.sparkContext.setLogLevel("ERROR")
 
 print("Spark Session Created Successfully!")
 # Read Bronze Layer CSV
 df = spark.read.csv(
-    "file:///home/vishnupriya_reddy2-9/RetailLake/data/raw/retail_transactions.csv",
+    "file:///opt/airflow/RetailLake/data/raw/retail_transactions.csv",
     header=True,
     inferSchema=True
 )
@@ -65,7 +68,7 @@ df.select(
 ).show(5)
 # Save Silver Layer as Parquet
 df.write.mode("overwrite").parquet(
-    "hdfs://localhost:9000/RetailLake/silver"
+    "file:///opt/airflow/RetailLake/data/silver"
 )
 
 print("\nSilver Layer Saved Successfully!")
@@ -77,7 +80,7 @@ gold_df.orderBy(col("TotalRevenue").desc()).show(10)
 
 # Save Gold Layer
 gold_df.write.mode("overwrite").parquet(
-    "hdfs://localhost:9000/RetailLake/gold"
+"file:///opt/airflow/RetailLake/data/gold"
 )
 
 print("Gold Layer Saved Successfully!")
