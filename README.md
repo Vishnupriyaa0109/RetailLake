@@ -77,12 +77,6 @@ RetailLake/
 - Apache Airflow
 ---
 
-# 🚧 Upcoming
-- Power BI Dashboard
-- Docker Deployment
-=======
----
-
 # 🚧 Future Enhancements
 
 - Interactive Power BI Dashboard
@@ -92,8 +86,7 @@ RetailLake/
 - Sales Forecasting
 - Incremental Data Loading
 - Spark Standalone Cluster
-- Apache Kafka Integration
->>>>>>> a71a541 (Update README and finalize RetailLake ETL pipeline)
+- Apache Kafka Integration 
 
 ---
 
